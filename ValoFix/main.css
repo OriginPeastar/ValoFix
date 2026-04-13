@@ -1,0 +1,133 @@
+/*
+main.css
+作成者：OriginPeastar
+作成日：2025/07/19
+*/
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #090f14;
+  overflow: hidden;
+}
+
+.side {
+  width: 30%;
+  height: 100%;
+  color: white;
+  /* text-align: center;  */
+}
+
+.content {
+  width: 70%;
+  height: 100%;
+  /* text-align: center; */
+}
+
+article {
+  display: flex;
+}
+
+form {
+  color: white;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #c0c0c0;
+}
+
+.map-container {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  width: 600px;
+  height: auto;
+  /* max-width: auto; */
+}
+
+.map-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.marker {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: background-color 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.marker:hover {
+  background-color: #ffffff;
+  transform: translate(-50%, -50%) scale(1.2); /*translate(-50%,-50%)で中心がずれないように調整できる*/
+}
+
+.prot {
+  display: none;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+  color: white;
+  width: 8px;
+  height: 8px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.form-popup {
+  display: none;
+  position: absolute;
+  background: #090f14;
+  color: black !important;
+  border: 1px solid #c0c0c0;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 14px;
+  width: 200px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.output {
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+.info {
+  display: none;
+  position: absolute;
+  background: white;
+  color: black;
+  border: 1px solid #c0c0c0;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 14px;
+  width: 200px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}

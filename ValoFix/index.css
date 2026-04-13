@@ -1,0 +1,33 @@
+/*
+index.css 
+作成者：OriginPeastar
+作成日：2025/07/19
+*/
+
+body {
+  background-color: black;
+}
+
+.logo {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: block;
+  width: 40vw;
+  height: auto;
+  margin: 0 auto;
+  top: 40%;
+  left: 50%;
+}
+
+.btn_center {
+  text-align: center !important;
+  position: absolute !important;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 50vw;
+  height: auto;
+  margin: 0 auto;
+  top: 60%;
+  left: 50%;
+}
